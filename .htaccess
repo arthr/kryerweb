@@ -1,0 +1,12 @@
+# << Friendly URLs
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home/?$ index.php [NC,L]
+RewriteRule ^downloads/?$ downloads.php [NC,L]
+RewriteRule ^informacoes/?$ informacoes.php [NC,L]
+RewriteRule ^cadastrar/?$ cadastrar.php [NC,L]
+RewriteRule ^termos/?$ termos.php [NC,L]
+</IfModule>
+# >> Friendly URLs

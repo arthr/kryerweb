@@ -1,0 +1,371 @@
+/* 
+    Created on : 09/01/2014, 05:14:16
+    Author     : Arthur Morais arthrmrs@gmail.com
+*/
+
+/* Reset
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+body {
+    line-height: 1; }
+ol, ul {
+    list-style: none; }
+blockquote, q {
+    quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+code {
+    padding: 3px 6px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    background: #fcfcfc;
+    border: 1px solid #e4e4e4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #3f8faf;
+}
+/* End Reset */
+
+html{min-height:100%; position:relative}/* make sure it is at least as tall as the viewport */
+body{height:100%}
+
+body {
+    background: url(../img/background.jpg) no-repeat center top;
+    background-color: #1a1613;
+    font-family: Verdana;
+}
+
+
+
+.clean {
+    clear: both;
+}
+.all {
+
+    background: url(../img/background-overlay.png);
+}
+.wrap {
+    width: 959px;
+    margin: auto;
+}
+.statusbar {
+    background: url(../img/statusbg.jpg) repeat-x;
+    height: 30px;
+}
+.statusinside {
+    width: 959px;
+    margin: auto;
+    height: 30px;
+}
+.wrap h1 {
+    padding: 145px 0 130px 20px;
+    background: url(../img/logo.png) no-repeat;
+    background-position-y: 120px;
+    color: transparent;
+}
+.menu {
+    height: 41px;
+    background: url(../img/menubg.jpg) no-repeat;
+}
+.menu ul {
+    padding-top: 13px;
+}
+.menu ul li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 20px;
+}
+.menu ul li a {
+    color: #c0bdb8;
+    text-decoration: none;
+    text-shadow: 2px 1px 2px #000;
+}
+.menu ul li a:hover {
+    color: #FFF;
+}
+.banner {
+    height: 185px;
+}
+.caption {
+    height: 50px;
+    position: relative;
+    bottom: 53px;
+    width: 958px;
+    background: black;
+    opacity: 0.5;
+}
+.clear {
+    height: 13px;
+    background: url(../img/clear.jpg) no-repeat;
+}
+.clear2 {
+    height: 12px;
+    background: url(../img/clear2.jpg) no-repeat;
+}
+.inside {
+    
+}
+.topbg {
+    background: url(../img/topbg.jpg) no-repeat;
+    height: 8px;
+}
+.main {
+    /*background: url(../img/newbg.jpg) repeat-y;*/
+    width: 639px;
+    float: left;
+}
+.main h2 {
+    background: url(../img/headnews.png) no-repeat;
+    height: 39px;
+    text-align: center;
+    line-height: 40px;
+    color: #c0bdb8;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    text-shadow: 2px 1px 2px #000;
+}
+.nbox {
+    width: 596px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.ninside {
+    background: #12110f;
+    padding: 10px 20px;
+}
+.preview {
+    width: 120px;
+    height: 110px;
+    background: url(../img/previewover.png) no-repeat;
+    padding: 5px;
+    float: left;
+}
+.image {
+    margin-top: 1px;
+}
+.post {
+    float: right;
+    width: 410px;
+}
+.post-expand {
+    float: right;
+    min-width: 410px;
+}
+.post-expand p {
+    color: #65605a;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 5px;
+}
+.post p {
+    color: #65605a;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 5px;
+}
+.overflow-box {
+    overflow-y: auto;
+    height: 200px;
+    padding: 5px 10px 5px 5px;
+    background-color: #0f0e0c;
+    box-shadow: 1px 1px 1px #000 inset;
+}
+.overflow-box p {
+    text-align: justify;
+    color: #57534e;
+}
+
+/* Scroll Bars */
+.overflow-box::-webkit-scrollbar { 
+    background-color: #110d0a;
+    border-radius: 3px;
+}
+.overflow-box::-webkit-scrollbar-button {
+    background-color: #171310;
+    box-shadow: 0px 1px 0px #000;
+}
+.overflow-box::-webkit-scrollbar-button:hover {
+    background-color: #1f1a16;
+}
+.overflow-box::-webkit-scrollbar-button:active {
+    background-color: #1e1814;
+}
+.overflow-box::-webkit-scrollbar-thumb {
+    background-color: #171310;
+    box-shadow: 0px 1px 0px #000;
+}
+.overflow-box::-webkit-scrollbar-thumb:hover {
+    background-color: #1f1a16;
+}
+.overflow-box::-webkit-scrollbar-thumb:active {
+    background-color: #1e1814;
+}
+/* End Scroll Bars */
+
+.newbot {
+    height: 16px;
+    background: url(../img/newbot.jpg) no-repeat;
+}
+.rightbar {
+    background: url(../img/rightbg.jpg) repeat-y;
+    width: 320px;
+    float: right;
+}
+.rbox {
+    margin-bottom: 25px;
+}
+.rbox > h3 {
+    height: 35px;
+    background: url(../img/righthead.png) no-repeat;
+    padding: 20px 0 0 50px;
+    line-height: 20px;
+    color: #c0bdb8;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    text-shadow: 2px 1px 2px #000;
+}
+.rightcontent {
+    padding:10px 0 0 25px;
+}
+.rightcontent ul li p {
+    font-size: 10px;
+    color: #5c564a;
+    text-align: center;
+}
+.rightcontent ul li p > a {
+    color: #857565;
+    text-decoration: none;
+}
+.dclient {
+    opacity: 0.7;
+    display: block;
+    height: 61px;
+    width: 261px;
+    background: url(../img/dclient.jpg) no-repeat;
+    color: transparent;
+    border: 7px solid #0f0e0c;
+    box-shadow: 0px 0px 0px 1px #0d0c0a;
+    margin-bottom: 10px;
+}
+.dclient:hover {
+    opacity: 1.0;
+}
+.dpatch {
+    opacity: 0.7;
+    display: block;
+    height: 61px;
+    width: 261px;
+    background: url(../img/dpatch.jpg) no-repeat;
+    color: transparent;
+    border: 7px solid #0f0e0c;
+    box-shadow: 0px 0px 0px 1px #0d0c0a;
+    margin-bottom: 10px;
+}
+.dpatch:hover {
+    opacity: 1.0;
+}
+.botbg {
+    background: url(../img/botbg.jpg) no-repeat;
+    height: 8px;
+    clear: both;
+}
+.rightbot {
+    float: right;
+    width: 320px;
+    height: 9px;
+    background: url(../img/rightbot.jpg) no-repeat;
+}
+footer {
+    padding: 50px;
+    opacity: 0.4;
+}
+footer p {
+    font-size: 10px;
+    font-family: Verdana;
+    color: #FFF;
+    text-align: center;
+    line-height: 12px;
+}
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Form Start */
+.cad-form {
+    padding: 0;
+    width: 555px;
+    font-size: 12px;
+}
+.cad-form li {
+    margin-bottom: 10px;
+}
+.cad-form label {
+    display: block;
+    color: #65605a;
+    margin-bottom: 5px;
+}
+.cad-form input[type=text], .cad-form input[type=password] {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 98%;
+    background-color: #0f0e0c;
+    box-shadow: 1px 1px 1px #000 inset;
+    color: #65605a;
+}
+
+
+
+/* Form End */
+
+/* Buttons Start */
+
+.button {
+    border: 1px solid #100f0b;
+    background: url(../img/btnbg.jpg);
+    height: 25px;
+    display: block;
+    float: left;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-family: Verdana;
+    font-size: 10px;
+    text-transform: lowercase;
+    color: #9b908e;
+    margin: 10px 0;
+    box-shadow: 1px 1px 1px #000;
+    opacity: 0.7;
+    font-weight: bold;
+    line-height: 22px;
+    text-decoration: none;
+}
+.button:hover {
+    opacity: 1;
+}
+.button:active {
+    opacity: 0.6;
+}
+
+/* Buttons End */
